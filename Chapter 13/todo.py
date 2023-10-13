@@ -35,6 +35,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
+        self.setFixedHeight(500)
+        self.setFixedWidth(500)
         self.setupUi(self)
         self.model = TodoModel()
         self.load()
