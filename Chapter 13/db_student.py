@@ -1,25 +1,14 @@
 import sys
 
 import mysql.connector
-from PyQt5 import QtGui
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QTableWidget, QApplication, QTableWidgetItem, QLabel, \
     QLineEdit, QSizePolicy, QMessageBox
-
-from secrets import secrets
-
-# Get parameters for connection
-my_host = secrets.get('DATABASE_HOST')
-my_user = secrets.get('DATABASE_USER')
-my_passwd = secrets.get('DATABASE_PWD')
-my_db = secrets.get('DATABASE')
 
 
 class TableDisplay(QWidget):
 
     def __init__(self):
         super(TableDisplay, self).__init__()
-        # Logo for application
-        self.setWindowIcon(QtGui.QIcon('student-logo.png'))
         # Create LineEdit
         self.sql_line = QLineEdit()
         self.sql_line.setText("select * from student")
@@ -64,10 +53,10 @@ class TableDisplay(QWidget):
         self.table_widget.clear()
         try:
             db = mysql.connector.connect(
-                host=my_host,
-                user=my_user,
-                password=my_passwd,
-                database=my_db)
+                host="localhost",
+                user="root",
+                password="rainer",
+                database="studentdb")
             print("Connection to mySQL database successful")
             try:
                 # Execute SQL command
@@ -111,5 +100,4 @@ if __name__ == "__main__":
     window = TableDisplay()
     window.resize(600, 600)
     window.show()
-    show_program_info()
     sys.exit(app.exec_())
