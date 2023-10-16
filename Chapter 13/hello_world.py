@@ -1,10 +1,11 @@
 # Example from https://www.techwithtim.net/tutorials/python-module-walk-throughs/pyqt5-tutorial/buttons-and-events
 # Small adaptions
 
+import sys
+
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow
-import sys
 
 
 class MyWindow(QMainWindow):
@@ -43,4 +44,5 @@ def window():
     sys.exit(app.exec_())
 
 
-window()
+if __name__ == "__main__":
+    window()
