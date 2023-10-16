@@ -2,8 +2,8 @@
 # from https://www.pythonguis.com/tutorials/modelview-architecture/
 # Copyright: M. Fitzpatrick
 
-import sys
 import json
+import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt
 
