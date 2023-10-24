@@ -2,10 +2,10 @@
 # savings account.
 
 class SavingsAccount:
-    
+
     # The __init__ method accepts arguments for the
     # account number, interest rate, and balance.
-    
+
     def __init__(self, account_num, int_rate, bal):
         self.__account_num = account_num
         self.__interest_rate = int_rate
@@ -35,6 +35,7 @@ class SavingsAccount:
     def get_balance(self):
         return self.__balance
 
+
 # The CD account represents a certificate of
 # deposit (CD) account. It is a subclass of
 # the SavingsAccount class.
@@ -44,7 +45,7 @@ class CD(SavingsAccount):
     # The init method accepts arguments for the
     # account number, interest rate, balance, and
     # maturity date.
-    
+
     def __init__(self, account_num, int_rate, bal, mat_date):
         # Call the superclass __init__ method.
         SavingsAccount.__init__(self, account_num, int_rate, bal)
