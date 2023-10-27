@@ -2,6 +2,7 @@
 
 import cellphone
 
+
 def main():
     # Get the phone data.
     man = input('Enter the manufacturer: ')
@@ -17,6 +18,7 @@ def main():
     print(f'Model Number: {phone.get_model()}')
     print(f'Retail Price: ${phone.get_retail_price():,.2f}')
 
+
 # Call the main function.
 if __name__ == '__main__':
-      main()
+    main()

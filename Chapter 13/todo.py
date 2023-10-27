@@ -4,6 +4,7 @@
 
 import json
 import sys
+
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt
 

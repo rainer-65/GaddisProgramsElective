@@ -1,13 +1,13 @@
 # This program unpickles CellPhone objects.
 import pickle
-import cellphone
 
 # Constant for the filename.
 FILENAME = 'cellphones.dat'
 
+
 def main():
-    end_of_file = False   # To indicate end of file
-    
+    end_of_file = False  # To indicate end of file
+
     # Open the file.
     input_file = open(FILENAME, 'rb')
 
@@ -27,6 +27,7 @@ def main():
     # Close the file.
     input_file.close()
 
+
 # The display_data function displays the data
 # from the CellPhone object passed as an argument.
 def display_data(phone):
@@ -35,6 +36,7 @@ def display_data(phone):
     print(f'Retail Price: ${phone.get_retail_price():,.2f}')
     print()
 
+
 # Call the main function.
 if __name__ == '__main__':
-      main()
+    main()

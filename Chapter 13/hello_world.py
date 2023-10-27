@@ -1,5 +1,5 @@
 # Example from https://www.techwithtim.net/tutorials/python-module-walk-throughs/pyqt5-tutorial/buttons-and-events
-# Small adaptions
+# small adaptions
 
 import sys
 

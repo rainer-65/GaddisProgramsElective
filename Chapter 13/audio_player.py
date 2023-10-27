@@ -1,10 +1,11 @@
 # Source: https://codepal.ai/code-generator/query/xmfZtOpn/python-audio-player-pyqt5-module-without-pygame
-# Small adaptions
+# small adaptions
 
 import os
+
 from PyQt5.QtCore import QUrl
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QFileDialog
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QFileDialog
 
 
 class AudioPlayer(QWidget):

@@ -3,6 +3,7 @@
 
 import accounts
 
+
 def main():
     # Get the account number, interest rate,
     # and account balance for a savings account.
@@ -42,6 +43,7 @@ def main():
     print(f'Balance: ${cd.get_balance():,.2f}')
     print(f'Maturity date: {cd.get_maturity_date()}')
 
+
 # Call the main function.
 if __name__ == '__main__':
-      main()
+    main()

@@ -1,11 +1,11 @@
 # The BankAccount class simulates a bank account.
 
 class BankAccount:
-    
+
     # The __init__ method accepts an argument for
     # the account's balance. It is assigned to
     # the __balance attribute.
-    
+
     def __init__(self, bal):
         self.__balance = bal
 

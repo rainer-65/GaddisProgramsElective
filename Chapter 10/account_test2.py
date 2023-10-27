@@ -3,6 +3,7 @@
 
 import bankaccount2
 
+
 def main():
     # Get the starting balance.
     start_bal = float(input('Enter your starting balance: '))
@@ -26,6 +27,7 @@ def main():
     # Display the balance.
     print(savings)
 
+
 # Call the main function.
 if __name__ == '__main__':
-      main()
+    main()

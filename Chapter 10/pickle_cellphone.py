@@ -1,9 +1,11 @@
 # This program pickles CellPhone objects.
 import pickle
+
 import cellphone
 
 # Constant for the filename.
 FILENAME = 'cellphones.dat'
+
 
 def main():
     # Initialize a variable to control the loop.
@@ -32,6 +34,7 @@ def main():
     output_file.close()
     print(f'The data was written to {FILENAME}.')
 
+
 # Call the main function.
 if __name__ == '__main__':
-      main()
+    main()

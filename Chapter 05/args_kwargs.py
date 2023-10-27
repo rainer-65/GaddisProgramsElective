@@ -14,6 +14,7 @@ print(add(ord('c'), ord('d')))
 print(add(2, 3, 5, 7))
 print(add(2, 3, 5, 7, 9))
 print(add(2.6, 3.7, 5.2))
+print()
 
 
 # How to Use **kwargs in Python
@@ -21,7 +22,6 @@ print(add(2.6, 3.7, 5.2))
 
 def total_fruits(**fruits):
     total = 0
-    print(type(fruits))  # Type Dictionary
     for amount in fruits.values():
         total += amount
     return total
