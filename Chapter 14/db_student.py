@@ -55,7 +55,7 @@ class TableDisplay(QWidget):
         try:
             db = mysql.connector.connect(
                 host="localhost",
-                user="root",
+                user="rainer",
                 password="rainer",
                 database="studentdb")
             print("Connection to mySQL database established")
