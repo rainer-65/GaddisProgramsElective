@@ -18,7 +18,7 @@ class App(QMainWindow):
         self.title = "BMI Program"
         self.left = 200
         self.top = 200
-        self.width = 500
+        self.width = 600
         self.height = 300
         self.init_ui()
 
@@ -55,11 +55,11 @@ class App(QMainWindow):
 
         # Create a textbox for input
         self.height_input = QLineEdit(self)
-        self.height_input.move(100, 100)
+        self.height_input.move(130, 100)
         self.height_input.resize(50, 20)
 
         self.weight_input = QLineEdit(self)
-        self.weight_input.move(100, 150)
+        self.weight_input.move(130, 150)
         self.weight_input.resize(50, 20)
 
         # Create a Calculate Button in the window
@@ -69,12 +69,12 @@ class App(QMainWindow):
         self.cal_button.move(200, 220)
 
         label_legend_weight = QLabel(self)
-        label_legend_weight.setText("weight (in kilos)")
-        label_legend_weight.move(160, 145)
+        label_legend_weight.setText("weight (kilo)")
+        label_legend_weight.move(200, 145)
 
         label_legend_height = QLabel(self)
-        label_legend_height.setText("height (in metres)")
-        label_legend_height.move(160, 95)
+        label_legend_height.setText("height (m)")
+        label_legend_height.move(200, 95)
 
         # Connect button to function on_click
         self.cal_button.clicked.connect(self.on_click)
