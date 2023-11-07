@@ -100,6 +100,6 @@ class TableDisplay(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = TableDisplay()
-    window.resize(600, 600)
+    window.resize(800, 800)
     window.show()
     sys.exit(app.exec_())
