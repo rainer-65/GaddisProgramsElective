@@ -30,9 +30,5 @@ print("New Set: ", set_comprehension)
 # Union of two sets
 set_1 = {'Python', 'Java', 'C++', 'Kotlin'}
 set_2 = {'C#', 'Java', 'C++'}
-temp = [x for x in set_2 if x not in set_1]
-set_comprehension = set_1.union(temp)
-print("Union Set: ", set_comprehension)
-# Shorter version
 set_comprehension = set_1.union(set_2)
 print("Union Set: ", set_comprehension)
