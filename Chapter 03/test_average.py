@@ -22,4 +22,3 @@ print(f'The average score is {average}.')
 if average >= high_score:
     print('Congratulations!')
     print('That is a great average!')
-

@@ -10,4 +10,4 @@ print('--------------')
 # and their squares.
 for number in range(1, 11):
     square = number**2
-    print(f'{number}\t{square}')
+    print(f'{number}\t\t{square}')

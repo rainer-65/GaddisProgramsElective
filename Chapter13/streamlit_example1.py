@@ -2,11 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 
-
-import matplotlib.pyplot as plt
-import numpy as np
-import streamlit as st
-
 # Selectbox for bins
 option = st.selectbox(
     "Select number of bins",

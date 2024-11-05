@@ -6,11 +6,11 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
 # Using TextBlob
-blob = TextBlob("I am very very unhappy, really!")
+blob = TextBlob("I am very very happy about this!")
 sentiment_textblob = blob.sentiment.polarity
 print(f"Sentiment analysis with TextBlob: {sentiment_textblob:.3f}")
 
 # Using NLTK’s Pre-Trained Sentiment Analyzer (Vader)
 sia = SentimentIntensityAnalyzer()
-sentiment_nltk = sia.polarity_scores("I am very very unhappy, really!")
+sentiment_nltk = sia.polarity_scores("I am very very happy about this!")
 print(f"Sentiment analysis with NLTK: {sentiment_nltk}")

@@ -20,6 +20,7 @@ def main():
     outfile.close()
     print('Data written to numbers.txt')
 
+
 # Call the main function.
 if __name__ == '__main__':
     main()

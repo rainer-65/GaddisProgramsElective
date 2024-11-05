@@ -16,4 +16,4 @@ t1.print_name()  # Printing name in the output
 # Accessing identifier outside the class
 # print(t1.__name)  # will throw an error in the output
 # Workaround
-print("The name mangled that we are accessing outside the class: ", t1._Testing__name)
+print("The name mangled that we are accessing outside the class:", t1._Testing__name)
